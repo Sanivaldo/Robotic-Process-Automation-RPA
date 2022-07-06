@@ -30,10 +30,10 @@ duracao_time = str(tempo_2 - tempo_1)
 
 print(duracao)
 
-plan = openpyxl.load_workbook(r"C:\Users\mis.lucas.coelho\PycharmProjects\pythonProject1\Acompanhamento-Relatórios.xlsx")
+plan = openpyxl.load_workbook(r"C:\Users\**\PycharmProjects\pythonProject1\Relatório.xlsx")
 plan_extraçoes = plan['Extrações']
 
 for item in nome_extração:
     plan_extraçoes.append([nome_extração,tempo_inicio,tempo_final,duracao])
 
-plan.save(r"C:\Users\mis.lucas.coelho\PycharmProjects\pythonProject1\Acompanhamento-Relatórios.xlsx")
+plan.save(r"C:\Users\**\PycharmProjects\pythonProject1\Relatório.xlsx")
